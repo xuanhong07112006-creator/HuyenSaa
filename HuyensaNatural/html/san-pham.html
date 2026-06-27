@@ -4,21 +4,191 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mặt Nạ Bột Gạo Lứt Huyết Rồng - Huyền Sa Naturals</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    
+   <script src="https://cdn.tailwindcss.com"></script> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Nhúng Font Montserrat chính xác -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+        
         /* Ép buộc mọi thành phần dùng Montserrat */
-        * {
-            font-family: 'Montserrat', sans-serif !important;
-        }
-        body { 
-            background-color: #fff5e1; 
-        }
+    
+        body {
+    font-family: 'Montserrat', sans-serif !important;
+  font-size: 18px; /* Tăng kích thước mặc định lên 18px */
+    line-height: 1.6; /* Tăng khoảng cách dòng để dễ đọc hơn */
+  background-color: rgb(254, 234, 209);
+}
+
+   
+     h1, h2, h3 {
+    font-family: 'Noto Serif', serif;
+    font-weight: 700;
+}
+footer {
+    background-color: #332a22;
+    color: #d1c7bd;
+    padding: 60px 8% 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr repeat(3, 1fr);
+    gap: 40px;
+    border-bottom: 1px solid #4a3f35;
+    padding-bottom: 40px;
+}
+
+footer h2 {
+   display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    color: white;
+}
+
+footer h3 {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    
+}
+
+footer p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 13px;
+    color: #8c7e72;
+}
+.footer a{
+    color: #d8d1c7;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer a:hover{
+    color: #c9a86a;
+}
+.social-links{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.social-links a{
+    color: #d8d1c7;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 16px;
+}
+
+.social-links a:hover{
+    color: #ffffff;
+}
+.social-links a{
+    color: #d8d1c7;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover{
+    color: #d4b26a;
+    text-shadow: 0 0 4px rgba(212,178,106,0.25);
+}
+/* Tabs */
+.tab-link{
+    padding:12px 22px;
+    font-size:15px;
+    font-weight:600;
+    color:#7B7B7B;
+    border-radius:12px 12px 0 0;
+    transition:all .3s ease;
+    border:none;
+    background:transparent;
+}
+
+.tab-link:hover{
+    color:#58161A;
+    background:#F7EFE8;
+}
+
+/* Tab đang chọn */
+.tab-link.active{
+    background:#58161A;
+    color:#fff;
+    box-shadow:0 8px 18px rgba(88,22,26,.18);
+}
+
+/* Nội dung */
+.tab-content{
+    background:#fff;
+    border:1px solid #F1E6DB;
+    border-top:none;
+    border-radius:0 0 18px 18px;
+    padding:24px;
+}
+.footer-grid a{
+    display:block;
+    margin-bottom:12px;
+    color:#d8d1c7;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.footer-grid a:hover{
+    color:#d4b26a;
+    transform:translateX(5px);
+}
+
+.footer-grid i{
+    width:20px;
+}
+
+.social-links{
+    display:flex;
+    gap:18px;
+    margin-top:18px;
+}
+
+.social-links a{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#43362c;
+    color:#fff;
+    transition:.3s;
+    font-size:18px;
+}
+
+.social-links a:hover{
+    background:#c9a86a;
+    color:#332a22;
+    transform:translateY(-4px);
+}
     </style>
 </head>
 <body>
@@ -27,7 +197,7 @@
     <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-100">
         <div class="max-w-7xl mx-auto px-8 h-[120px] flex items-center justify-between">
             <a href="chinh.html" class="block">
-                <img src="../image/logo.final1 (1).png" alt="Logo Huyền Sa" style="height: 100px; width: auto;">
+                <img src="../image/logo-huyen-sa.png" alt="bot-cam-gao-nguyen-chat" style="height: 100px; width: auto;">
             </a>
             <nav class="hidden md:flex space-x-10 text-gray-600 font-medium">
                 <a href="chinh.html" class="hover:text-[#58161A] transition">TRANG CHỦ</a>
@@ -40,43 +210,214 @@
     </header>
 
     <!-- CHI TIẾT SẢN PHẨM -->
-    <main class="max-w-6xl mx-auto px-4 py-12 flex flex-col md:flex-row gap-12 items-center">
+  <!-- CHI TIẾT SẢN PHẨM -->
+<!-- CHI TIẾT SẢN PHẨM -->
+<main class="max-w-6xl mx-auto px-4 py-12 flex flex-col md:flex-row gap-8 items-stretch">
+    
+    <!-- Bên trái: Hình ảnh -->
+    <div class="w-full md:w-2/5 bg-white rounded-3xl p-0 flex justify-center items-center shadow-sm border border-gray-100 h-full">
+    <img src="../image/gao-lut-mat-na-thien-nhien.jpg"
+    alt="mat-na-bot-cam-gao-lut" 
+    class="w-full h-[500px] object-cover rounded-2xl">
+</div>
+
+    <!-- Bên phải -->
+   <div class="w-full md:w-3/5 flex flex-col space-y-2 h-full justify-between">
+
+        <h1 class="text-3xl lg:text-4xl font-bold text-gray-800 leading-snug">
+            Mặt Nạ Cám Gạo Huyết Rồng – Dưỡng Sáng Tự Nhiên
+        </h1>
+
+        <p class="text-gray-400 text-sm tracking-widest uppercase">
+            200G
+        </p>
         
-        <!-- Bên trái: Hình ảnh -->
-        <div class="w-full md:w-1/2 bg-white rounded-3xl p-8 flex justify-center items-center shadow-sm border border-gray-50">
-            <img src="../image/hũ sp.png" alt="Mặt Nạ Bột Gạo Lứt Huyết Rồng" class="max-h-[420px] object-contain">
+        <div class="text-3xl font-bold text-[#A64B58]">
+            149.000đ
+        </div>
+        
+        <p class="text-gray-600 leading-relaxed text-justify text-base">
+            Sản phẩm kết hợp 100% gạo lứt huyết rồng An Giang nguyên chất với công nghệ 
+            xay Nano siêu mịn. Giúp làm sáng da, mờ thâm sạm và cấp ẩm sâu. Thành phần 
+            thiên nhiên, thuần chay, an toàn cho cả da nhạy cảm.
+        </p>
+
+        <!-- Khung Tabs -->
+        <div class="w-full">
+            <div class="flex border-b-2 border-gray-200 text-sm">
+                <button onclick="openTab(event, 'tab1')"
+class="tab-link active">
+    Tại sao chọn?
+</button>
+
+<button onclick="openTab(event, 'tab2')"
+class="tab-link">
+    Công dụng
+</button>
+
+<button onclick="openTab(event, 'tab3')"
+class="tab-link">
+    Hướng dẫn
+</button>
+            </div>
+
+            <!-- Nội dung Tab 1 -->
+            <div id="tab1" class="tab-content p-4 text-sm text-gray-600">
+                <ul class="list-disc ml-5 space-y-1">
+                    <li><strong>Nguyên liệu:</strong> 100% gạo lứt huyết rồng tự nhiên, không hóa chất.</li>
+                    <li><strong>Công nghệ Nano:</strong> Bột siêu mịn, thẩm thấu sâu, tẩy tế bào chết dịu nhẹ.</li>
+                    <li><strong>Cam kết:</strong> Mỹ phẩm thuần chay (vegan) & organic, an toàn cho da nhạy cảm.</li>
+                </ul>
+            </div>
+            
+            <!-- Nội dung Tab 2 -->
+            <div id="tab2" class="tab-content p-4 hidden text-sm text-gray-600">
+                <ul class="list-disc ml-5 space-y-1">
+                    <li><strong>Dưỡng sáng:</strong> Làm mờ thâm sạm, giúp da đều màu tự nhiên.</li>
+                    <li><strong>Cấp ẩm:</strong> Nuôi dưỡng làn da mềm mại, khỏe khoắn từ bên trong.</li>
+                    <li><strong>Dưỡng chất:</strong> Giàu Vitamin B, E và khoáng chất chống oxy hóa.</li>
+                </ul>
+            </div>
+            
+            <!-- Nội dung Tab 3 -->
+            <div id="tab3" class="tab-content p-4 hidden text-sm text-gray-600">
+                <ol class="list-decimal ml-5 space-y-1">
+                    <li>Trộn 1-2 thìa bột với nước sạch, sữa tươi hoặc sữa chua.</li>
+                    <li>Thoa đều lên mặt, massage nhẹ nhàng trong 1-2 phút.</li>
+                    <li>Để thư giãn từ 10-15 phút rồi rửa sạch với nước ấm.</li>
+                    <li>Sử dụng 2-3 lần/tuần để đạt hiệu quả tốt nhất.</li>
+                </ol>
+            </div>
         </div>
 
-        <!-- Bên phải: Thông tin -->
-        <div class="w-full md:w-1/2 space-y-6">
-            <h1 class="text-4xl font-bold text-gray-800 leading-tight">Mặt Nạ Bột Gạo Lứt Huyết Rồng</h1>
-            <p class="text-gray-400 text-sm tracking-widest uppercase">200g</p>
-            
-            <div class="text-3xl font-bold text-[#A64B58]">149.000đ</div>
-            
-            <p class="text-gray-600 leading-relaxed text-justify">
-                Được làm từ 100% gạo lứt huyết rồng nguyên chất vùng Tứ Giác Long Xuyên, An Giang, kết hợp công nghệ xay Nano siêu mịn. Sản phẩm hỗ trợ dưỡng ẩm, làm sáng và cải thiện độ đều màu da, giúp làn da trông tươi tắn, mềm mại và khỏe khoắn hơn.
+        <div class="space-y-2">
+            <h3 class="text-base font-semibold text-gray-800">Công dụng chính</h3>
+            <div class="flex flex-wrap gap-2 text-xs lg:text-sm font-medium text-emerald-800">
+                <span class="bg-emerald-50 px-3 py-1 rounded-full border border-emerald-100">✓ Dưỡng ẩm sâu</span>
+                <span class="bg-emerald-50 px-3 py-1 rounded-full border border-emerald-100">✓ Sáng da</span>
+                <span class="bg-emerald-50 px-3 py-1 rounded-full border border-emerald-100">✓ Đều màu</span>
+            </div>
+        </div>
+
+        <a href="https://vn.shp.ee/2888wrUW" target="_blank" class="bg-[#A64B58] hover:bg-[#8A3B46] text-white font-semibold px-6 py-3 rounded-full w-max shadow-md transition-all">
+            MUA NGAY
+        </a>
+    </div>
+</main>
+<script src="js/script.js"></script>
+<script>
+function openTab(evt, tabName) {
+    // 1. Ẩn tất cả nội dung tab
+    var tabcontent = document.getElementsByClassName("tab-content");
+    for (var i = 0; i < tabcontent.length; i++) { 
+        tabcontent[i].classList.add("hidden"); 
+    }
+    
+    // 2. Reset các nút tab (cho về trạng thái nhạt)
+    var tablinks = document.getElementsByClassName("tab-link");
+    for (var i = 0; i < tablinks.length; i++) { 
+        // Bỏ các class nhấn mạnh
+        tablinks[i].classList.remove("border-brown-600", "text-[#58161A]", "font-bold");
+        // Thêm class nhạt
+        tablinks[i].classList.add("text-gray-500", "font-semibold", "border-transparent");
+    }
+    
+    // 3. Hiện tab được chọn
+    document.getElementById(tabName).classList.remove("hidden");
+    
+    // 4. THIẾT LẬP MÀU NỔI BẬT CHO NÚT ĐANG CHỌN
+    evt.currentTarget.classList.add("border-brown-600", "text-[#58161A]", "font-bold");
+    evt.currentTarget.classList.remove("text-gray-500", "font-semibold", "border-transparent");
+}
+</script>
+</body>
+ <footer>
+
+    <div class="footer-grid">
+
+        <!-- Cột 1 -->
+        <div>
+            <h2>HUYỀN SA</h2>
+
+            <p>
+                Tinh hoa gạo lứt huyết rồng từ vùng đất An Giang — nơi thiên nhiên ban tặng
+                những gì tinh khiết nhất cho làn da của bạn.
             </p>
 
-            <div class="space-y-3">
-                <h3 class="text-lg font-semibold text-gray-800">Công dụng</h3>
-                <div class="flex flex-wrap gap-2 text-sm font-medium text-emerald-800">
-                    <span class="bg-emerald-50 px-4 py-2 rounded-full border border-emerald-100 flex items-center gap-1">✓ Dưỡng ẩm sâu</span>
-                    <span class="bg-emerald-50 px-4 py-2 rounded-full border border-emerald-100 flex items-center gap-1">✓ Sáng da tự nhiên</span>
-                    <span class="bg-emerald-50 px-4 py-2 rounded-full border border-emerald-100 flex items-center gap-1">✓ Đều màu da</span>
-                </div>
+            <div class="footer-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.79379591613!2d106.76605487371171!3d10.827086489324781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317526551102d319%3A0x7cbd0f417a818023!2zMjAgVMSDbmcgTmjGoW4gUGjDuiwgUGjGsOG7m2MgTG9uZywgSOG7kyBDaMOtIE1pbmggNzE1OTM5LCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1782290682215!5m2!1svi!2s"
+                    width="100%"
+                    height="180"
+                    style="border:0;border-radius:12px;"
+                    loading="lazy"
+                    allowfullscreen>
+                </iframe>
             </div>
 
-            <a href="https://vn.shp.ee/2888wrUW"
-   target="_blank"
-   class="bg-[#A64B58] hover:bg-[#8A3B46] text-white font-semibold px-8 py-3 rounded-full inline-flex items-center justify-center shadow-md transition-all">
-    MUA NGAY
-</a>
-                </button>
-                
-            </div>
+            <p>
+                Địa chỉ: 20 Tăng Nhơn Phú, Phước Long, TP. Hồ Chí Minh
+            </p>
         </div>
-    </main>
 
-</body>
+        <!-- Cột 2 -->
+        <div>
+            <h3>THÔNG TIN</h3>
+<a href="chinh.html">Trang chủ</a>
+            <a href="gioi-thieu.html">Giới thiệu</a>
+            <a href="san-pham.html">Sản phẩm</a>        
+            <a href="lien-he.html">Liên hệ</a>
+        <a href="chinh-sach.html">Chính sách</a>
+        </div>
+
+        <!-- Cột 3 -->
+        <div>
+            <h3>HỖ TRỢ</h3>
+
+            <a href="huong-dan-mua-hang.html">Hướng dẫn mua hàng</a>
+            <a href="thanh-toan.html">Thanh toán</a>
+            <a href="van-chuyen.html">Vận chuyển</a>
+            <a href="doi-tra.html">Đổi trả & Hoàn tiền</a>
+        </div>
+
+        <!-- Cột 4 -->
+        <div>
+
+            <h3>LIÊN HỆ</h3>
+
+            <a href="tel:0369153859">
+                <i class="fa-solid fa-phone"></i>
+                0369 153 859
+            </a>
+
+            <a href="mailto:Huyensanaturals@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+                Huyensanaturals@gmail.com
+            </a>
+
+            <div class="social-links">
+
+                <a href="https://vn.shp.ee/2888wrUW" target="_blank">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </a>
+
+                <a href="https://www.facebook.com/share/1LFkKSSz1K/" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="https://www.tiktok.com/@huyensa_naturals?_r=1&_t=ZS-97U4dlIsmnQ" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        © 2026 HUYỀN SA. All rights reserved.
+    </div>
+
+</footer>
 </html>

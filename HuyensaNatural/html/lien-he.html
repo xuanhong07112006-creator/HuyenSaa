@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liên hệ - Huyền Sa Naturals</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 
@@ -14,6 +15,120 @@
             font-family: 'Montserrat', sans-serif !important; /* Dùng !important để ghi đè mọi thứ */
         
         }
+        h1, h2, h3 {
+    font-family: 'Noto Serif', serif;
+    font-weight: 700;
+}
+
+        footer {
+    background-color: #332a22;
+    color: #d1c7bd;
+    /* Giảm padding top/bottom */
+    padding: 40px 8% 20px; 
+    margin-top: 60px;
+    margin-bottom: -50px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr repeat(3, 1fr);
+    /* Giảm khoảng cách giữa các cột để cân đối hơn */
+    gap: 30px; 
+    border-bottom: 1px solid #4a3f35;
+    padding-bottom: 30px;
+}
+
+footer h2 {
+   display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    color: white;
+    
+}
+
+footer h3 {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 15px; /* Thu hẹp margin */    
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer p {
+    margin-bottom: 8px; /* Giảm khoảng cách giữa các dòng chữ */
+    font-size: 14px;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 15px; /* Giảm padding trên copyright */
+    font-size: 13px;
+    color: #8c7e72;
+}
+
+/* Các phần link và social giữ nguyên hoặc tinh chỉnh nhẹ */
+footer a {
+    color: #d8d1c7;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+footer a:hover {
+    color: #c9a86a;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Thu hẹp khoảng cách các icon */
+    margin-top: 10px;
+}
+.footer-grid a{
+    display:block;
+    margin-bottom:12px;
+    color:#d8d1c7;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.footer-grid a:hover{
+    color:#d4b26a;
+    transform:translateX(5px);
+}
+
+.footer-grid i{
+    width:20px;
+}
+
+.social-links{
+    display:flex;
+    gap:18px;
+    margin-top:18px;
+}
+
+.social-links a{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#43362c;
+    color:#fff;
+    transition:.3s;
+    font-size:18px;
+}
+
+.social-links a:hover{
+    background:#c9a86a;
+    color:#332a22;
+    transform:translateY(-4px);
+}
     </style>
 </head>
 
@@ -51,5 +166,95 @@
             <button class="w-full bg-[#A64B58] text-white py-3 rounded-full font-bold">GỬI TIN NHẮN</button>
         </form>
     </div>
+    <footer>
+
+    <div class="footer-grid">
+
+        <!-- Cột 1 -->
+        <div>
+            <h2>HUYỀN SA</h2>
+
+            <p>
+                Tinh hoa gạo lứt huyết rồng từ vùng đất An Giang — nơi thiên nhiên ban tặng
+                những gì tinh khiết nhất cho làn da của bạn.
+            </p>
+
+            <div class="footer-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.79379591613!2d106.76605487371171!3d10.827086489324781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317526551102d319%3A0x7cbd0f417a818023!2zMjAgVMSDbmcgTmjGoW4gUGjDuiwgUGjGsOG7m2MgTG9uZywgSOG7kyBDaMOtIE1pbmggNzE1OTM5LCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1782290682215!5m2!1svi!2s"
+                    width="100%"
+                    height="180"
+                    style="border:0;border-radius:12px;"
+                    loading="lazy"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <p>
+                Địa chỉ: 20 Tăng Nhơn Phú, Phước Long, TP. Hồ Chí Minh
+            </p>
+        </div>
+
+        <!-- Cột 2 -->
+        <div>
+            <h3>THÔNG TIN</h3>
+<a href="chinh.html">Trang chủ</a>
+            <a href="gioi-thieu.html">Giới thiệu</a>
+            <a href="san-pham.html">Sản phẩm</a>
+            <a href="lien-he.html">Liên hệ</a>
+        <a href="chinh-sach.html">Chính sách</a>
+        </div>
+
+        <!-- Cột 3 -->
+        <div>
+            <h3>HỖ TRỢ</h3>
+
+            <a href="huong-dan-mua-hang.html">Hướng dẫn mua hàng</a>
+            <a href="thanh-toan.html">Thanh toán</a>
+            <a href="van-chuyen.html">Vận chuyển</a>
+            <a href="doi-tra.html">Đổi trả & Hoàn tiền</a>
+        </div>
+
+        <!-- Cột 4 -->
+        <div>
+
+            <h3>LIÊN HỆ</h3>
+
+            <a href="tel:0369153859">
+                <i class="fa-solid fa-phone"></i>
+                0369 153 859
+            </a>
+
+            <a href="mailto:Huyensanaturals@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+                Huyensanaturals@gmail.com
+            </a>
+
+            <div class="social-links">
+
+                <a href="https://vn.shp.ee/2888wrUW" target="_blank">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </a>
+
+                <a href="https://www.facebook.com/share/1LFkKSSz1K/" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="https://www.tiktok.com/@huyensa_naturals?_r=1&_t=ZS-97U4dlIsmnQ" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        © 2026 HUYỀN SA. All rights reserved.
+    </div>
+
+</footer>
 </body>
+
 </html>

@@ -4,28 +4,198 @@
 <head>
     <meta charset="UTF-8">
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>body { background-color: #FDFBF7; 
-    background-image: url(../image/96bbc1ce-85c3-4622-b3ee-e38bbe342858.png)
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     
-    }</style>
+    <style>
+    body {
+    background-color:#FDFBF7;
+    background-image:
+    linear-gradient(
+        rgba(255,255,255,0.15),
+        rgba(255,255,255,0.15)
+    ),
+    url(../image/96bbc1ce-85c3-4622-b3ee-e38bbe342858.png);
+
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+    </style>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 
 <style>
-  body {
-    /* Áp dụng font cho toàn bộ trang */
-    font-family: 'Montserrat',sans-serif;
-    
-    
+body {
+    font-family: 'Montserrat', sans-serif !important;
+  font-size: 18px; /* Tăng kích thước mặc định lên 18px */
+    line-height: 1.6; /* Tăng khoảng cách dòng để dễ đọc hơn */
   }
-  
+  footer {
+    background-color: #332a22;
+    color: #d1c7bd;
+    padding: 60px 8% 20px;
+    margin-left: -100px;
+    margin-right: -100px;
+    margin-bottom: -80px;
+    margin-top: 90px;
+
+  }
+.footer-grid {
+       display: grid;
+    grid-template-columns: 2fr repeat(3, 1fr);
+    gap: 40px;
+    border-bottom: 1px solid #4a3f35;
+    padding-bottom: 40px;
+}
+
+footer h2 {
+   display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    color: white;
+}
+
+footer h3 {
+       color: #fff;
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 600;
+}
+
+footer p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 13px;
+    color: #8c7e72;
+}
+.footer a{
+    color: #d8d1c7;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer a:hover{
+    color: #c9a86a;
+}
+.social-links{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.social-links a{
+    color: #d8d1c7;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 16px;
+}
+
+.social-links a:hover{
+    color: #ffffff;
+}
+.social-links a{
+    color: #d8d1c7;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover{
+    color: #d4b26a;
+    text-shadow: 0 0 4px rgba(212,178,106,0.25);
+}
+.footer-grid a{
+    display:block;
+    margin-bottom:12px;
+    color:#d8d1c7;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.footer-grid a:hover{
+    color:#d4b26a;
+    transform:translateX(5px);
+}
+
+.footer-grid i{
+    width:20px;
+}
+
+.social-links{
+    display:flex;
+    gap:18px;
+    margin-top:18px;
+}
+
+.social-links a{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#43362c;
+    color:#fff;
+    transition:.3s;
+    font-size:18px;
+}
+
+.social-links a:hover{
+    background:#c9a86a;
+    color:#332a22;
+    transform:translateY(-4px);
+}
+
+h1, h2, h3 {
+    font-family: 'Noto Serif', serif;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+.content-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 515;
+    color: #4A2C1A;
+    font-size: 16px;
+    line-height: 1.65;
+    letter-spacing: 0.2px;
+}
+p {
+    text-align: justify;
+}
+p {
+    margin-bottom: 22px;
+}
+.content-text p {
+    margin-bottom: 14px;
+}
+
 </style>
 
 </head>
-<body class="p-8 md:p-20">
+<body class="p-8 md:p-20 relative">
     <nav class="fixed top-0 left-0 right-0 z-50  md:px-20 flex justify-between items-center bg-white shadow-sm">
    <a href="chinh.html" class="flex items-center">
     <!-- Thay đổi đường dẫn src="..." tới file ảnh logo thực tế của bạn -->
-    <img src="../image/logo.final1 (1).png" alt="Logo Huyền Sa" class="h-20 w-auto object-contain">
+    <img src="../image/logo-huyen-sa.png" alt="Logo Huyền Sa" class="h-20 w-auto object-contain">
 </a>
     
     <div class="space-x-8 font-medium text-gray-700 hidden md:flex">
@@ -43,23 +213,22 @@
         </a>
     </div>
 </nav>
-    <div class="max-w-3xl mx-auto">
+    <div class="max-w-5xl mx-auto bg-white/40 backdrop-blur-[2px] p-6 md:p-8 rounded-xl">
         <a href="chinh.html" class="text-gray-500 hover:text-[#58161A] mb-8 inline-block">← Quay về trang chủ</a>
 
-        <h2 class="uppercase tracking-widest text-sm mb-2" style="color: oklch(0.75 0.15 55);">
+        <h2 class="uppercase tracking-widest text-xs mb-2" style="color: oklch(0.75 0.15 55);">
     CÂU CHUYỆN THƯƠNG HIỆU
 </h2>
-        <h1 class="text-5xl font-semibold mb-8">
-    <span style="color: oklch(.12 .04 30 / 1);">Huyền Sa</span><br>
+       <h1 class="text-4xl font-semibold mb-5">
+    <span style="color: oklch(.12 .04 30 / 1);">Huyền Sa Naturals</span><br>
     
-    <span class="text-pink-700">Naturals</span>
+    <span class="text-pink-700">Mỹ phẩm thiên nhiên từ gạo lứt huyết rồng Việt Nam</span>
 </h1>
         
-       <div class="space-y-5 leading-relaxed text-[18px] font-sans" 
-     style="color: oklch(0.28 0.1 33.07);">
-    <p>Huyền Sa Naturals được lấy cảm hứng từ gạo lứt huyết rồng vùng Tứ Giác Long Xuyên, nơi nổi tiếng với những cánh đồng lúa được bồi đắp bởi nguồn phù sa màu mỡ của đồng bằng sông Cửu Long. Từ nguồn nguyên liệu bản địa giàu giá trị ấy, Huyền Sa mong muốn mang đến những sản phẩm chăm sóc da an toàn, lành tính và gần gũi với người Việt.</p>
-    <p>Chúng tôi tin rằng vẻ đẹp bền vững bắt nguồn từ thiên nhiên. Vì vậy, mỗi sản phẩm đều được nghiên cứu và phát triển dựa trên sự kết hợp giữa tinh hoa nông sản Việt Nam và công nghệ sản xuất hiện đại, nhằm giữ trọn những dưỡng chất quý giá từ nguyên liệu tự nhiên.</p>
-    <p>Không chỉ đơn thuần là một thương hiệu mỹ phẩm, Huyền Sa Naturals còn mong muốn góp phần lan tỏa giá trị của nông sản Việt, nâng tầm những nguyên liệu quen thuộc thành các sản phẩm chăm sóc sắc đẹp chất lượng. Trên hành trình ấy, chúng tôi luôn theo đuổi triết lý làm đẹp an toàn, bền vững và hài hòa với thiên nhiên.</p>
+       <div class="content-text space-y-6">
+    <p>Huyền Sa Naturals được lấy cảm hứng từ gạo lứt huyết rồng vùng Tứ Giác Long Xuyên – vùng đất nổi tiếng với những cánh đồng lúa giàu dinh dưỡng được nuôi dưỡng bởi nguồn phù sa màu mỡ của đồng bằng sông Cửu Long. Từ nguồn nguyên liệu thiên nhiên quý giá này, Huyền Sa Naturals mong muốn mang đến những sản phẩm chăm sóc da an toàn, lành tính và phù hợp với làn da người Việt.</p>
+    <p>Với định hướng phát triển mỹ phẩm thiên nhiên Việt Nam, Huyền Sa tin rằng vẻ đẹp bền vững bắt nguồn từ sự cân bằng giữa thiên nhiên và khoa học. Mỗi sản phẩm đều được nghiên cứu, chọn lọc và phát triển dựa trên sự kết hợp giữa tinh hoa nông sản Việt Nam cùng công nghệ sản xuất hiện đại, giúp lưu giữ những dưỡng chất tự nhiên quý giá, mang lại giải pháp chăm sóc da hiệu quả và an toàn.</p>
+    <p>Không chỉ là một thương hiệu mỹ phẩm, Huyền Sa Naturals hướng đến việc nâng tầm giá trị nguyên liệu Việt, biến những sản phẩm nông sản quen thuộc như gạo lứt huyết rồng thành các dòng skincare thiên nhiên chất lượng cao. Chúng tôi luôn theo đuổi hành trình làm đẹp xanh với triết lý an toàn – bền vững – hài hòa cùng thiên nhiên, góp phần mang đến vẻ đẹp khỏe mạnh và lâu dài cho người Việt.</p>
 </div>
     </div>
 <!-- Code injected by live-server -->
@@ -100,5 +269,95 @@
 	}
 	// ]]>
 </script>
+ <footer>
+
+    <div class="footer-grid">
+
+        <!-- Cột 1 -->
+        <div>
+            <h2>HUYỀN SA</h2>
+
+            <p>
+                Tinh hoa gạo lứt huyết rồng từ vùng đất An Giang — nơi thiên nhiên ban tặng
+                những gì tinh khiết nhất cho làn da của bạn.
+            </p>
+
+            <div class="footer-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.79379591613!2d106.76605487371171!3d10.827086489324781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317526551102d319%3A0x7cbd0f417a818023!2zMjAgVMSDbmcgTmjGoW4gUGjDuiwgUGjGsOG7m2MgTG9uZywgSOG7kyBDaMOtIE1pbmggNzE1OTM5LCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1782290682215!5m2!1svi!2s"
+                    width="100%"
+                    height="180"
+                    style="border:0;border-radius:12px;"
+                    loading="lazy"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <p>
+                Địa chỉ: 20 Tăng Nhơn Phú, Phước Long, TP. Hồ Chí Minh
+            </p>
+        </div>
+
+        <!-- Cột 2 -->
+        <div>
+            <h3>THÔNG TIN</h3>
+<a href="chinh.html">Trang chủ</a>
+            <a href="gioi-thieu.html">Giới thiệu</a>
+            <a href="san-pham.html">Sản phẩm</a>
+        
+            <a href="lien-he.html">Liên hệ</a>
+            <a href="chinh-sach.html">Chính sách</a>
+        </div>
+
+        <!-- Cột 3 -->
+        <div>
+            <h3>HỖ TRỢ</h3>
+
+            <a href="huong-dan-mua-hang.html">Hướng dẫn mua hàng</a>
+            <a href="thanh-toan.html">Thanh toán</a>
+            <a href="van-chuyen.html">Vận chuyển</a>
+            <a href="doi-tra.html">Đổi trả & Hoàn tiền</a>
+        </div>
+
+        <!-- Cột 4 -->
+        <div>
+
+            <h3>LIÊN HỆ</h3>
+
+            <a href="tel:0369153859">
+                <i class="fa-solid fa-phone"></i>
+                0369 153 859
+            </a>
+
+            <a href="mailto:Huyensanaturals@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+                Huyensanaturals@gmail.com
+            </a>
+
+            <div class="social-links">
+
+                <a href="https://vn.shp.ee/2888wrUW" target="_blank">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </a>
+
+                <a href="https://www.facebook.com/share/1LFkKSSz1K/" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="https://www.tiktok.com/@huyensa_naturals?_r=1&_t=ZS-97U4dlIsmnQ" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        © 2026 HUYỀN SA. All rights reserved.
+    </div>
+
+</footer>
 </body>
 </html>
